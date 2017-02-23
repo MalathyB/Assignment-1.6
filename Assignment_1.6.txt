@@ -1,0 +1,85 @@
+1) Write a java code with the class named ‘acad’ and a method ‘main’. Hardcode the program
+with two integers and print the sum of those two.
+  
+Program: import java.util.Scanner;
+
+         public class acad {
+	 void main(){
+		int sum=0;
+		int a=10,b=20;
+		sum=a+b;
+		System.out.println(sum);
+		
+		}
+	    public static void main(String[] agrs){
+		acad as=new acad();
+		as.main();
+		
+	    }
+  
+         }
+  
+output:
+         30
+
+    
+
+2) Rewrite the above code, where, inputs are provided by the user at runtime and the output
+is printed.
+
+Program:import java.util.Scanner;
+
+        public class acad {
+	    void main(){
+		int sum=0;
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		sum=a+b;
+		System.out.println(sum);
+		sc.close();
+		}
+	    public static void main(String[] agrs){
+		acad as=new acad();
+		as.main();
+		
+	    }
+
+      }
+
+  
+output:
+         10
+         20
+         30
+
+
+3) Write a program with method name sum() that accepts two parameters from user and print
+the sum two numbers. Output format should be as:
+
+
+Program:
+       import java.util.Scanner;
+
+       public class acad {
+	void sum(int a,int b){
+		int sum=0;
+		sum=a+b;
+		System.out.println(sum);
+		}
+	public static void main(String[] agrs){
+		acad as=new acad();
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		as.sum(a, b);
+		sc.close();
+	}
+
+       }
+
+output:
+      23
+      6
+      29
+  
